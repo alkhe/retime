@@ -1,6 +1,6 @@
 {
   "name": "retime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Promise-based time-coordinated execution library.",
   "main": "index.js",
   "scripts": {
