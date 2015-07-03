@@ -26,5 +26,11 @@ import { defer, sleep } from 'retime';
 	console.log(await a);
 	// 2
 	// 1
-});
+
+	console.log(await* [
+		defer(() => 1, 1000),
+		defer(() => 2, 2000)
+	]);
+	// [ 1, 2 ]
+})();
 ```

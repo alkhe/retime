@@ -11,4 +11,9 @@ let { defer, sleep } = require('../lib');
 
 	await sleep(1000);
 	console.log('slept for 1 second');
+
+	console.log(await* [
+		defer(() => 1, 1000),
+		defer(() => 2, 2000)
+	]);
 })();
